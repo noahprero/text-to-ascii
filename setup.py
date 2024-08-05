@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='text_to_ascii',
-    version='0.3',
+    version='0.4',
     url="https://github.com/noahprero/text-to-ascii",
     author="Noah Prero",
     packages=find_packages(),
