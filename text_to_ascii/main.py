@@ -59,9 +59,6 @@ def text_to_ascii(text_path, image_path, copies, filler, threshold):
     resized_image = rescale_image_to_fit(img, text_length, threshold)
     black_pixel_count = count_black_pixels(resized_image, threshold)
 
-    if black_pixel_count < text_length:
-        resized_image = rescale_image_to_fit(img, text_length, threshold)
-
     text = fill_text(text, black_pixel_count, filler)
     print(print_text_on_image(resized_image, text, threshold))
 
